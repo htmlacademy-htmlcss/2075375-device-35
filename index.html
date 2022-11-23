@@ -33,14 +33,30 @@
               <svg class="basket-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M15 5h-3L9 0H7L4 5H1L0 6l2 7 1 1h10l1-1 2-7-1-1ZM8 2l2 3H6l2-3Z"/></svg>
             </div>
             <a class="basket-link" href="#">Корзина</a>
+            <div class="basket-popover">
+              <ul class="basket-popover-list">
+                <li class="basket-popover-item">
+
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="navigation-points">
           <div class="product-catalog-container">
             <button class="good-catalog-button" type="button">
               <h2 class="goods-catalog">Каталог товаров</h2>
-              <div class="goods-catalog-circle"></div>
+              <div class="goods-catalog-circle-plus"></div>
+              <div class="goods-catalog-circle-minus"></div>
             </button>
+            <div class="good-catalog-popover">
+              <a class="good-catalog-popover-item">Виртуальная реальность</a>
+              <a class="good-catalog-popover-item">Моноподы для cелфи</a>
+              <a class="good-catalog-popover-item">Экшн-камеры</a>
+              <a class="good-catalog-popover-item">Фитнес-браслеты</a>
+              <a class="good-catalog-popover-item">Умные часы</a>
+              <a class="good-catalog-popover-item">Квадрокоптеры</a>
+            </div>
           </div>
           <ul class="services-list">
             <li class="services-list-item">
@@ -55,38 +71,138 @@
           </ul>
         </div>
       </nav>
-      <div class="yellow-background">
-        <p class="01">01</p>
-      </div>
-      <div class="header-slider">
-        <button class="slider-button">
-          <svg class="button-switch-back" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M20 60h-3L0 30 17 0h3L4 30l16 30Z"/></svg>
-        </button>
-        <img class="quadrocopter-image" src="/images/header/quadrocopter.jpg" alt="Квадрокоптер">
-        <button class="slider-button">
-          <svg class="button-switch-forward" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M0 0h3l17 30L4 60H0l16-30L0 0Z"/></svg>
-        </button>
-      </div>
-      <div class="product-card">
-        <h1 class="product-card-title">Порхает как бабочка, жалит как пчела!</h1>
-        <p class="product-card-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <p class="detailed">Подробнее</p>
-        <ul class="specifications-list">
-          <li class="flight-range">
-            <h2 class="flight-range-value">800 м</h2>
-            <p class="flight-range-description">Дальность полета</p>
+      </header>
+      <main class="main-container">
+        <div class="yellow-background">
+          <span class="yellow-background-01">01</span>
+          <span class="yellow-background-02">02</span>
+          <span class="yellow-background-03">03</span>
+        </div>
+        <div class="header-sliders">
+          <div class="header-slider-first">
+            <button class="slider-button slider-button-back">
+              <svg class="button-switch-back" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M20 60h-3L0 30 17 0h3L4 30l16 30Z"/></svg>
+            </button>
+            <img class="quadrocopter-image" src="/images/slider/quadrocopter.png" alt="Изображение квадрокоптера" width="560" height="560">
+            <button class="slider-button slider-button-forward">
+              <svg class="button-switch-forward" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M0 0h3l17 30L4 60H0l16-30L0 0Z"/></svg>
+            </button>
+          </div>
+          <div class="product-card">
+            <h2 class="product-card-title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="product-card-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="detailed">Подробнее</p>
+            <ul class="specifications-list">
+              <li class="flight-range">
+                <h3 class="flight-range-value">800 м</h3>
+                <p class="flight-range-description">Дальность полета</p>
+              </li>
+              <li class="defeat-radius">
+                <h3 class="defeat-radius-value">50 м</h3>
+                <p class="defeat-radius-description">Радиус поражения</p>
+              </li>
+            </ul>
+            <div class="indicators-list">
+              <div class="indicators-item indicators-item-current"></div>
+              <div class="indicators-item"></div>
+              <div class="indicators-item"></div>
+            </div>
+          </div>
+          <div class="header-slider-second">
+            <button class="slider-button slider-button-back">
+              <svg class="button-switch-back" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M20 60h-3L0 30 17 0h3L4 30l16 30Z"/></svg>
+            </button>
+            <img class="watches-image" src="/images/slider/watches.png" alt="Изображение фитнес-браслета" width="560" height="560">
+            <button class="slider-button slider-button-forward">
+              <svg class="button-switch-forward" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M0 0h3l17 30L4 60H0l16-30L0 0Z"/></svg>
+            </button>
+          </div>
+          <div class="product-card">
+            <h2 class="product-card-title">Худеем правильно!</h2>
+            <p class="product-card-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="detailed">Подробнее</p>
+            <div class="specifications">
+              <h3 class="flight-range-value">48 часов</h3>
+              <p class="flight-range-description">Без подзарядки</p>
+            </div>
+            <div class="indicators-list">
+              <div class="indicators-item"></div>
+              <div class="indicators-item indicators-item-current"></div>
+              <div class="indicators-item"></div>
+            </div>
+          </div>
+          <div class="header-slider-third">
+            <button class="slider-button slider-button-back">
+              <svg class="button-switch-back" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M20 60h-3L0 30 17 0h3L4 30l16 30Z"/></svg>
+            </button>
+            <img class="sticks-image" src="/images/slider/sticks.png" alt="Изображение селфи-палок" width="560" height="560">
+            <button class="slider-button slider-button-forward">
+              <svg class="button-switch-forward" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none" viewBox="0 0 20 60"><path fill="#000" d="M0 0h3l17 30L4 60H0l16-30L0 0Z"/></svg>
+            </button>
+          </div>
+          <div class="product-card">
+            <h2 class="product-card-title">Делай селфи, как Бен Стиллер! </h2>
+            <p class="product-card-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <p class="detailed">Подробнее</p>
+            <ul class="specifications-list">
+              <li class="stick-length">
+                <h3 class="stick-length-value">8,5 м</h3>
+                <p class="stick-length-description">Длина палки</p>
+              </li>
+              <li class="stick-weight">
+                <h3 class="stick-weight-value">5 кг</h3>
+                <p class="stick-weight-description">Вес палки</p>
+              </li>
+              <li class="stick-material">
+                <h3 class="stick-material-type">Карбон</h3>
+                <p class="stick-material-description">Материал</p>
+              </li>
+            </ul>
+            <div class="indicators-list">
+              <div class="indicators-item"></div>
+              <div class="indicators-item"></div>
+              <div class="indicators-item indicators-item-current"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="catalog-categories-list">
+          <li class="catalog-categories-card">
+            <div class="card-content">
+              <img class="vr-glasses-image" src="/images/main/icons/vr-glasses.svg" alt="Изображение vr-очков" width="96" height="55">
+            </div>
+            <h3 class="card-description">Виртуальная реальность</h3>
           </li>
-          <li class="defeat-radius">
-            <h2 class="defeat-radius-value">50 м</h2>
-            <p class="defeat-radius-description">Радиус поражения</p>
+          <li class="catalog-categories-card">
+            <div class="card-content">
+              <img class="monopod-image" src="/images/main/icons/monopod.svg" alt="Изображение монопода" width="85" height="117">
+            </div>
+            <h3 class="card-description">Моноподы для селфи</h3>
+          </li>
+          <li class="catalog-categories-card">
+            <div class="card-content">
+              <img class="camera-image" src="/images/main/icons/сamera.svg" alt="Изображение камеры" width="71" height="87">
+            </div>
+            <h3 class="card-description">Экшн-камеры</h3>
+          </li>
+          <li class="catalog-categories-card">
+            <div class="card-content">
+              <img class="fitness-bracelet-image" src="/images/main/icons/fitness-bracelet.svg" alt="Изображение фитнес-браслета" width="107" height="65">
+            </div>
+            <h3 class="card-description">Фитнес-браслеты</h3>
+          </li>
+          <li class="catalog-categories-card">
+            <div class="card-content">
+              <img class="smart-watches-image" src="/images/main/icons/smart-watches.svg" alt="Изображение умных часов" width="56" height="98">
+            </div>
+            <h3 class="card-description">Умные часы</h3>
+          </li>
+          <li class="catalog-categories-card">
+            <div class="card-content">
+              <img class="quadrocopter-image" src="/images/main/icons/quadrocopter.svg" alt="Изображение квадрокоптера" width="132" height="69">
+            </div>
+            <h3 class="card-description">Квадрокоптеры</h3>
           </li>
         </ul>
-        <div class="indicators-list">
-          <div class="indicators-item indicators-item-current"></div>
-          <div class="indicators-item"></div>
-          <div class="indicators-item"></div>
-        </div>
-      </div>
-    </header>
+      </main>
   </body>
 </html>
