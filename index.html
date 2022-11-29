@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
 
@@ -202,8 +203,8 @@
               </div>
               <div class="slide-content">
                 <span class="slide-number">02</span>
-                <h2 class="product-card-title">Худеем правильно!</h2>
-                <p class="product-card-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                <h2 class="slide-title">Худеем правильно!</h2>
+                <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
                   пропускать занятия и соблюдать диету.</p>
                 <a class="slide-detailed" href="#">Подробнее</a>
                 <div class="slide-specifications">
@@ -219,8 +220,8 @@
               </div>
               <div class="slide-content">
                 <span class="slide-number">03</span>
-                <h2 class="product-card-title">Делай селфи, как Бен Стиллер! </h2>
-                <p class="product-card-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                <h2 class="slide-title">Делай селфи, как Бен Стиллер! </h2>
+                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
                   (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                 <a class="slide-detailed" href="#">Подробнее</a>
                 <div class="slide-specifications">
@@ -397,7 +398,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="subscription-form-container">
             <div class="form-field-button">
-              <input class="form-field-hovered" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+              <input class="form-field-subscription" type="email" name="newsletter-email" placeholder="Ваш e-mail">
               <button class="subscription-button" type="submit">Подписаться</button>
             </div>
             <div class="side-element">
@@ -498,9 +499,9 @@
               <label class="form-label">
                 Ваше имя:
                 <input class="form-input" type="text" name="name" placeholder="Введите имя">
-                <span class="-form-input-caption">Добавьте имя</span>
                 <span class="form-icon"></span>
               </label>
+              <span class="form-caption">Добавьте имя</span>
             </div>
             <div class="modal-form-container">
               <label class="form-label">
@@ -528,12 +529,10 @@
                     требованиям к провозу багажа.</p>
                 </div>
                 <button class="form-input-button-decrease" type="button">
-                  <!--Минус будет поставлен фоном в кнопку-->
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="form-input" type="text" name="count" value="1">
                 <button class="form-input-button-increase" type="button">
-                  <!--Плюс будет поставлен фоном в кнопку-->
                   <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </label>
