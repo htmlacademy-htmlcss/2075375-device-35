@@ -27,6 +27,15 @@ body {
   font-weight: 400;
 }
 
+.user-features::before {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 300px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
 .form-field {
   font-size: 16px;
   line-height: 20px;
@@ -39,7 +48,7 @@ body {
   line-height: 20px;
 }
 
-.entry-link {
+.account-entry-link {
   font-size: 18px;
   line-height: 30px;
 }
@@ -238,6 +247,28 @@ body {
   text-transform: uppercase;
 }
 
+.rare-delivery-information-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.circle-information {
+  position: absolute;
+  box-sizing: border-box;
+  top: 14px;
+  left: 18.5px;
+  width: 2px;
+  height: 12px;
+  padding: 0;
+  margin: auto;
+  background-image: url("/images/main/icons/i-icon.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
 .about-us-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -348,7 +379,7 @@ body {
   line-height: 30px;
 }
 
-.footer-address-text {
+.footer-address {
   font-size: 16px;
   line-height: 20px;
 }
@@ -420,11 +451,13 @@ body {
 }
 
 .form-input-button-decrease {
-  background-image: url("images/modal/minus.svg");
+  background-image: url("/images/modal/minus.svg");
+  background-repeat: no-repeat;
 }
 
 .form-input-button-increase {
-  background-image: url("images/modal/plus.svg");
+  background-image: url("/images/modal/plus.svg");
+  background-repeat: no-repeat;
 }
 
 .catalog-title {
