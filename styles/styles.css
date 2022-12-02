@@ -25,20 +25,95 @@
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.user-features::before {
-  content: "";
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+.page-header {
+  position: relative;
   width: 1160px;
-  height: 300px;
+  min-height: 300px;
+  margin: auto;
+  margin-top: 40px;
   background-color: #FFE17F;
-  z-index: -1;
+}
+
+.navigation {
+  position: absolute;
+  right: 60px;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  width: 1040px;
+  min-height: 186px;
+  margin: auto;
+}
+
+.device-logo-link {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.user-features {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.searching-form {
+  display: flex;
+  margin-right: 26px;
+}
+
+.searching-form-label {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
 }
 
 .form-field {
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
+  width: 359px;
+  height: 40px;
+  padding: 10px 10px 10px 48px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  background-color: inherit;
+}
+
+.form-field::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.form-field::-moz-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+
+
+.searching-form-image {
+  position: absolute;
+  top: 12px;
+  left: 16px;
 }
 
 .form-button {
@@ -46,12 +121,41 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: 158px;
+  height: 40px;
+  border: 2px solid #000000;
+  border-left: 0;
+  border-radius: 0 50px 50px 0;
+  background-color: inherit;
+  color: #000000;
+  cursor: pointer;
+}
+
+.user-account-container {
+  display: flex;
+  align-items: center;
+  width: 231px;
+  min-height: 30px;
+  flex-shrink: 0;
+  margin-right: 26px;
+}
+
+.acount-entry-link-image {
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 12px;
+  margin-right: 12px;
 }
 
 .account-entry-link {
+  min-height: 30px;
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
+  color: #000000;
 }
+
 
 .user-account-exit-button {
   font-family: "Rubik", sans-serif;
@@ -60,22 +164,153 @@ body {
   line-height: 30px;
 }
 
+.comparison-container {
+  display: flex;
+  align-items: center;
+  width: 105px;
+  min-height: 30px;
+  margin-right: 61px;
+}
+
+.comparsion-link-image {
+  display: flex;
+  width: 10px;
+  height: 12px;
+  margin-right: 12px;
+}
+
 .comparison-link {
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.basket-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 99px;
+  min-height: 30px;
+}
+
+.basket-link-icons {
+  display: flex;
+  text-decoration: none;
+  position: absolute;
+  left: -43px;
+  width: 31px;
+  height: 21px;
+}
+
+.basket-icons-container {
+  display: flex;
+  position: absolute;
 }
 
 .basket-numbers {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 17px;
+  width: 21px;
+  height: 21px;
+  border-radius: 10.5px;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 1;
+}
+
+.basket-image {
+  position: absolute;
+  top: 1.5px;
+  left: 15px;
+  z-index: 0;
 }
 
 .basket-link {
+  display: flex;
+  text-decoration: none;
+  color: #000000;
   font-size: 18px;
   line-height: 30px;
 }
 
+.basket-popover {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20px;
+  top: 31px;
+  right: -83px;
+  width: 320px;
+  min-height: 307px;
+  justify-content: column;
+  background-color: #000000;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.basket-popover::before {
+  content: url("/images/header/basket-popover/icons/triangle.svg");
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  top: -14px;
+  right: 153px;
+}
+
+.basket-popover-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.basket-popover-item {
+  width: 320px;
+  height: 83px;
+}
+
+.basket-popover-item-container {
+  display: flex;
+  width: 183px;
+  min-height: 43px;
+}
+
 .basket-popover-title {
+  margin: 0;
+}
+
+.basket-popover-button-delete {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.basket-popover-result {
+  display: flex;
+  width: 320px;
+  min-height: 44px;
+  padding: 0 20px;
+}
+
+.basket-popover-result-type {
+  display: flex;
+
+  width: 120px;
+  min-height: 44px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.basket-popover-title {
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
 }
@@ -92,21 +327,159 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 280px;
+  min-height: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: auto;
+  text-decoration: none;
 }
 
-.good-catalog-button-open,
-.good-catalog-button-none {
+.navigation-points {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.product-catalog-buttons {
+  display: flex;
+  width: 293px;
+  height: 50px;
+  align-items: center;
+}
+
+.good-catalog-button {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  width: 236px;
+  min-height: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 7px;
+  background-color: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.good-catalog-circle {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  left: 243px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  opacity: 0.3;
+  background-color: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*При нажатии на кнопку каталог товаров или кружочек, будет добавляться display: none либо ::before, либо ::after.*/
+.good-catalog-circle::before {
+  content: url("/images/header/icons/plus-icon.svg");
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 1px;
+}
+
+.good-catalog-circle::after {
+  display: none;
+  content: url("/images/header/icons/minus-icon.svg");
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -3px;
+}
+
+/*При нажатии на кнопку каталог товаров или кружочек, будет меняться значение с display: none на display: flex*/
+.good-catalog-popover {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 1160px;
+  min-height: 180px;
+  background-color: #FFE17F;
+  right: -60px;
+  top: 167px;
+  padding: 33px 60px 27px 60px;
+}
+
+.good-catalog-popover-column-first {
+  margin-right: 30px;
+  width: 222px;
+  min-height: 120px;
+}
+
+.good-catalog-popover-column-first li:not(:last-child) {
+  margin-top: -1px;
+  margin-bottom: 18px;
+}
+
+.good-catalog-popover-column-first li:nth-child(2) {
+  margin-bottom: 17px;
+}
+
+.good-catalog-popover-column-second {
+  margin-right: 1px;
+  width: 211px;
+  min-height: 120px;
+}
+
+.good-catalog-popover-column-second li:not(:last-child) {
+  margin-top: -1px;
+  margin-bottom: 17px;
+}
+
+.good-catalog-popover-column-third {
+  width: 211px;
+  min-height: 120px;
+}
+
+.good-catalog-popover-column-third .good-catalog-popover-column-item {
+  margin-top: -1px;
+}
+
+.good-catalog-popover-column-list {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .good-catalog-popover-item {
+  color: #000000;
+  text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 471px;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 127px;
+  z-index: 1;
 }
 
 .delivery-link,
@@ -118,6 +491,8 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .slide-number {
