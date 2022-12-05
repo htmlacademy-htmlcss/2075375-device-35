@@ -178,35 +178,30 @@
     </header>
     <main class="main-container">
       <section class="promo">
-        <div class="promo-slider">
-          <div class="sliders-switchers">
-            <button class="slider-button slider-button-back" type="button">
-              <svg class="button-switch-back" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                width="20" height="60" fill="none" viewBox="0 0 20 60">
-                <path fill="#000" d="M20 60h-3L0 30 17 0h3L4 30l16 30Z" />
-              </svg>
-              <span class="visually-hidden">Кнопка переключения слайда назад</span>
-            </button>
-            <button class="slider-button slider-button-forward" type="button">
-              <svg class="button-switch-forward" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                width="20" height="60" fill="none" viewBox="0 0 20 60">
-                <path fill="#000" d="M0 0h3l17 30L4 60H0l16-30L0 0Z" />
-              </svg>
-              <span class="visually-hidden">Кнопка переключения слайда вперед</span>
-            </button>
-          </div>
-          <div class="slider-content">
-            <div class="slide current">
-              <div class="slide-image">
-                <img class="quadrocopter-image" src="images/slider/quadrocopter.png" alt="Изображение квадрокоптера"
-                  width="560" height="560">
+        <div class="sliders-switchers">
+          <button class="slider-button-back" type="button">
+            <span class="visually-hidden">Кнопка переключения слайда назад</span>
+          </button>
+          <button class="slider-button-forward" type="button">
+            <span class="visually-hidden">Кнопка переключения слайда вперед</span>
+          </button>
+        </div>
+        <div class="slider-content">
+          <div class="slide current">
+            <div class="slide-image">
+              <img class="quadrocopter-image" src="images/slider/quadrocopter.png" alt="Изображение квадрокоптера"
+                width="560" height="560">
+            </div>
+            <div class="slide-content">
+              <span class="slide-number">01</span>
+              <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <div class="slide-detailed-container">
+
+                <a class="slide-detailed-link" href="#">Подробнее</a>
               </div>
-              <div class="slide-content">
-                <span class="slide-number">01</span>
-                <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
-                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                  замаскированным под стандартную камеру.</p>
-                <a class="slide-detailed" href="#">Подробнее</a>
+              <div class="product-specifications">
                 <dl class="flight-range">
                   <dt class="flight-range-value">800 м</dt>
                   <dd class="flight-range-description">Дальность полета</dd>
@@ -218,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide" style="display: none;">
             <div class="slide-image">
               <img class="watches-image" src="images/slider/watches.png" alt="Изображение фитнес-браслета" width="560"
                 height="560">
@@ -235,7 +230,7 @@
               </dl>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide" style="display: none;">
             <div class="slide-image">
               <img class="sticks-image" src="images/slider/sticks.png" alt="Изображение селфи-палок" width="560"
                 height="560">
@@ -271,7 +266,6 @@
           <button class="slider-bullet" type="button">
             <span class="visually-hidden">Слайд 3</span>
           </button>
-        </div>
         </div>
       </section>
       <section class="product-categories">
