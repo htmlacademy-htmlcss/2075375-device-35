@@ -15,15 +15,9 @@
           <img class="device-logo-image" src=images/device-logo.svg alt="Логотип Девайса">
         </a>
         <div class="user-features">
-          <!--Желтый фон будет сделан ::before или ::after-->
           <div class="searching-form-container">
             <form class="searching-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="searching-form-label">
-                <svg class="searching-form-image" aria-hidden="true" focusable="false"
-                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                  <path fill="#000"
-                    d="m15.7 14.3-3.1-3.1A7 7 0 0 0 7 0a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" />
-                </svg>
                 <input class="form-field" type="text" name="input-field" placeholder="Поиск по сайту">
               </label>
               <button class="form-button" type="submit" name="search">Найти</button>
@@ -67,8 +61,7 @@
               </div>
             </a>
             <a class="basket-link" href="#">Корзина</a>
-            <div class="basket-popover">
-              <!--Маленький треугольник к поповеру будет сделан псевдоэлементом-->
+            <div class="basket-popover basket-popover-disabled">
               <ul class="basket-popover-list">
                 <li class="basket-popover-item">
                   <div class="basket-popover-item-container">
@@ -113,7 +106,7 @@
                 <span class="visually-hidden">Дополняющая кнопка каталога товаров</span>
               </button>
             </div>
-            <div class="good-catalog-popover">
+            <div class="good-catalog-popover good-catalog-popover-disabled">
               <div class="good-catalog-popover-column-first">
                 <ul class="good-catalog-popover-column-list">
                   <li class="good-catalog-popover-column-item">
@@ -184,13 +177,13 @@
                 замаскированным под стандартную камеру.</p>
               <a class="slide-detailed-link" href="#">Подробнее</a>
               <div class="product-specifications">
-                <dl class="flight-range">
-                  <dt class="flight-range-value">800 м</dt>
-                  <dd class="flight-range-description">Дальность полета</dd>
+                <dl class="product-specification-section">
+                  <dt class="product-specification-value">800 м</dt>
+                  <dd class="product-specification-description">Дальность полета</dd>
                 </dl>
-                <dl class="defeat-radius">
-                  <dt class="defeat-radius-value">50 м</dt>
-                  <dd class="defeat-radius-description">Радиус поражения</dd>
+                <dl class="product-specification-section">
+                  <dt class="product-specification-value">50 м</dt>
+                  <dd class="product-specification-description">Радиус поражения</dd>
                 </dl>
               </div>
             </div>
@@ -206,9 +199,9 @@
               <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не
                 пропускать занятия и соблюдать диету.</p>
               <a class="slide-detailed-link" href="#">Подробнее</a>
-              <dl class="charge">
-                <dt class="charge-time-value">48 часов</dt>
-                <dd class="charge-description">Без подзарядки</dd>
+              <dl class="product-specification-section">
+                <dt class="product-specification-value">48 часов</dt>
+                <dd class="product-specification-description">Без подзарядки</dd>
               </dl>
             </div>
           </div>
@@ -223,18 +216,18 @@
               <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
                 (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="slide-detailed-link" href="#">Подробнее</a>
-              <div class="product-specifications-third">
-                <dl class="stick-length">
-                  <dt class="stick-length-value">8,5 м</dt>
-                  <dd class="stick-length-description">Длина палки</dd>
+              <div class="product-specifications">
+                <dl class="product-specification-section">
+                  <dt class="product-specification-value">8,5 м</dt>
+                  <dd class="product-specification-description">Длина палки</dd>
                 </dl>
-                <dl class="stick-weight">
-                  <dt class="stick-weight-value">5 кг</dt>
-                  <dd class="stick-weight-description">Вес палки</dd>
+                <dl class="product-specification-section">
+                  <dt class="product-specification-value">5 кг</dt>
+                  <dd class="product-specification-description">Вес палки</dd>
                 </dl>
-                <dl class="stick-material">
-                  <dt class="stick-material-type">Карбон</dt>
-                  <dd class="stick-material-description">Материал</dd>
+                <dl class="product-specification-section">
+                  <dt class="product-specification-value">Карбон</dt>
+                  <dd class="product-specification-description">Материал</dd>
                 </dl>
               </div>
             </div>
@@ -265,7 +258,7 @@
             </a>
           </li>
           <li class="catalog-categories-card">
-            <a class="card-content" href="#">
+            <a class="card-content" href="/catalog.html">
               <div class="card-title-container">
                 <img class="monopod-image" src="images/main/icons/monopod.svg" alt="Изображение монопода" width="85"
                   height="117" style="position: absolute;bottom: -1px;/* top: 11px; */">
@@ -430,7 +423,6 @@
         <img class="footer-device-logo" src="images/footer/device-logo-footer.svg" alt="Логотип Девайса" width="145"
           height="36">
         <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-        <!--Желтая полоска будет сделана псевдоэлементом-->
       </div>
       <div class="footer-container-center">
         <ul class="footer-services-list">
@@ -488,7 +480,7 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-disable">
       <div class="modal-content">
         <div class="modal-content-container-first">
           <h2 class="modal-content-title">Доставка под заказ</h2>
@@ -503,7 +495,7 @@
                 <label class="form-label">
                   Ваше имя:
                   <input class="form-input" type="text" name="name" placeholder="Введите имя">
-                  <span class="form-icon-name"></span>
+                  <span class="form-icon form-icon-name"></span>
                 </label>
               </div>
               <span class="form-caption">Добавьте имя</span>
@@ -514,7 +506,7 @@
                   Ваш e-mail:
                   <input class="form-input form-input-error" type="email" name="e-mail" placeholder="Введите e-mail"
                     value="почта">
-                  <span class="form-icon-mail"></span>
+                  <span class="form-icon form-icon-mail"></span>
                 </label>
               </div>
               <span class="form-error">Забавный у вас адрес</span>
