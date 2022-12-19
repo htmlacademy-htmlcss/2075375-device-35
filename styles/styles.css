@@ -2515,12 +2515,15 @@ body {
 }
 
 .pagination-button {
+  border: none;
+  background: transparent;
   margin: auto;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #444444;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .pagination-button-current {
