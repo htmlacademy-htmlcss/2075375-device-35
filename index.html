@@ -3,14 +3,14 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
 
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Сайт проекта "Девайс"</h1>
+      <h1 class="visually-hidden">"Девайс"</h1>
       <nav class="navigation">
         <a class="device-logo-link" href="index.html">
           <img class="device-logo-image" src=images/device-logo.svg alt="Логотип Девайса">
@@ -127,7 +127,7 @@
         <div class="slider-content">
           <div class="slide current">
             <div class="slide-image">
-              <img class="quadrocopter-image" src="images/slider/quadrocopter.png" alt="Изображение квадрокоптера"
+              <img class="quadrocopter-sl" src="images/slider/quadrocopter-sl.png" alt="Изображение квадрокоптера"
                 width="560" height="560">
             </div>
             <div class="slide-content">
@@ -150,7 +150,7 @@
           </div>
           <div class="slide">
             <div class="slide-image">
-              <img class="watches-image" src="images/slider/watches.png" alt="Изображение фитнес-браслета" width="560"
+              <img class="watches-sl" src="images/slider/watches-sl.png" alt="Изображение фитнес-браслета" width="560"
                 height="560">
             </div>
             <div class="slide-content">
@@ -167,7 +167,7 @@
           </div>
           <div class="slide">
             <div class="slide-image">
-              <img class="sticks-image" src="images/slider/sticks.png" alt="Изображение селфи-палок" width="560"
+              <img class="sticks-sl" src="images/slider/sticks-sl.png" alt="Изображение селфи-палок" width="560"
                 height="560">
             </div>
             <div class="slide-content">
@@ -223,7 +223,7 @@
                 <img class="monopod-image" src="images/main/icons/monopod.svg" alt="Изображение монопода" width="85"
                   height="117" style="position: absolute;bottom: -1px;/* top: 11px; */">
               </div>
-              <h3 class="card-description">Моноподы для селфи</h3>
+              <h3 class="card-description">Моноподы <br> для селфи</h3>
             </a>
           </li>
           <li class="product-categories-card">
@@ -361,7 +361,7 @@
       <section class="subscription">
         <div class="subscription-content">
           <div class="subscription-text">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+            <h2 class="subscription-title">Подпишитесь <br> на рассылку</h2>
             <p class="subscription-description">Еженедельный дайджест с обзорами новинок, <br> длительными
               тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
@@ -370,10 +370,7 @@
               <input class="form-field-subscription" type="email" name="newsletter-email" placeholder="Ваш e-mail">
               <button class="subscription-button" type="submit">Подписаться</button>
             </form>
-            <div class="side-element">
-              <span class="side-element-image"></span>
-              <p class="side-element-text">Это бесплатно</p>
-            </div>
+            <p class="side-element">Это бесплатно</p>
           </div>
         </div>
       </section>
@@ -385,17 +382,19 @@
             <img class="footer-device-logo" src="images/footer/device-logo-footer.svg" alt="Логотип Девайса" width="145"
               height="36">
           </a>
-          <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+          <address class="footer-address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</address>
         </div>
         <div class="footer-container-center">
           <ul class="footer-services-list">
             <li class="footer-services-item">
               <a class="footer-services-link" href="#">Доставка</a>
             </li>
-            <li class="footer-services-item">
+            <li class="footer-services-item" style="
+            margin-right: 1px;">
               <a class="footer-services-link" href="#">Гарантия</a>
             </li>
-            <li class="footer-services-item">
+            <li class="footer-services-item" style="
+            margin-right: -3px;">
               <a class="footer-services-link" href="#">Контакты</a>
             </li>
           </ul>
