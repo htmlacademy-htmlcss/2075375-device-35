@@ -1022,16 +1022,11 @@ body {
 
 .product-categories-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.product-categories-card {
-  width: 160px;
-  min-height: 253px;
 }
 
 .card-content {
@@ -1067,6 +1062,10 @@ body {
   height: 160px;
   background-color: #FFE17F;
   margin-bottom: 33px;
+}
+
+.monopod-image {
+  margin-top: auto;
 }
 
 .card-description {
@@ -1468,7 +1467,7 @@ body {
 .about-us-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 19px;
   padding: 0;
   margin: 0;
   min-height: 98px;
@@ -1875,7 +1874,7 @@ body {
 
 .footer-container-left {
   position: relative;
-  margin: 62px 0 77px 0;
+  margin: 62px 0 auto 0;
   min-width: 239px;
   min-height: 182px;
 }
@@ -1921,21 +1920,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 444px;
   min-height: 123px;
   margin: 137px 183px 61px auto;
 }
 
 .footer-services-list {
-  min-width: 444px;
-  min-height: 21px;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  column-gap: 35px;
+  row-gap: 5px;
   list-style: none;
-  justify-content: space-between;
-  margin-bottom: 62px;
+  max-width: 460px;
+  min-height: 21px;
+  padding: 0;
+  margin: 0 0 auto 0;
 }
 
 .footer-services-link {
@@ -1977,18 +1975,17 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 5px;
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 150px;
-  height: 40px;
+  max-width: 260px;
 }
 
 .footer-social-item {
   display: flex;
-  padding-bottom: 5px;
 }
 
 .footer-social-link {
@@ -2542,7 +2539,7 @@ body {
   display: none;
   position: absolute;
   top: 35px;
-  right: 2px;
+  right: 0;
   box-sizing: border-box;
   width: 200px;
   min-height: 160px;
@@ -2918,6 +2915,13 @@ body {
 .range-input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.range-input,
+.range-input:hover,
+.range-input:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .catalog-filter-list-checkbox {
