@@ -3,7 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -12,16 +14,16 @@
     <header class="catalog-header">
       <nav class="navigation">
         <a class="device-logo-link" href="index.html">
-          <img class="device-logo-image" src=images/device-logo.svg alt="Логотип Девайса">
+          <img class="device-logo-image" src=images/device-logo.svg alt="Логотип Девайса" width="145" height="36">
         </a>
         <div class="user-features">
           <div class="searching-form-container">
             <form class="searching-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="searching-form-label">
-                <input class="form-field" type="text" name="input-field" placeholder="Поиск по сайту">
+                <input class="form-field" type="text" name="input-field" placeholder="Поиск по сайту" required>
                 <span class="form-field-icon"></span>
               </label>
-              <button class="form-button" type="submit" name="search">Найти</button>
+              <button class="form-button" type="submit">Найти</button>
             </form>
           </div>
           <a class="account-logged-in" href="#">Коля Петухов</a>
@@ -34,7 +36,7 @@
                 <li class="basket-popover-item">
                   <div class="basket-popover-item-container">
                     <img class="basket-popover-icon" src="images/header/basket-popover/icons/selfie-amat.png"
-                      alt="Изображение любительской селфи-палки">
+                      alt="Изображение любительской селфи-палки" width="39" height="43">
                     <h3 class="basket-popover-title">Любительская <br> селфи-палка</h3>
                   </div>
                   <button class="basket-popover-button-delete" type="button">
@@ -47,7 +49,7 @@
                 <li class="basket-popover-item">
                   <div class="basket-popover-item-container">
                     <img class="basket-popover-icon" src="images/header/basket-popover/icons/selfie-pro.png"
-                      alt="Изображение профессиональной селфи-палки">
+                      alt="Изображение профессиональной селфи-палки" width="39" height="43">
                     <h3 class="basket-popover-title">Профессиональная <br> селфи-палка</h3>
                   </div>
                   <button class="basket-popover-button-delete" type="button">
@@ -244,7 +246,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="card-image" src="images/catalog/cards/card-selfie-amat.jpg"
-                    alt="Изображение любительской селфи-палки">
+                    alt="Изображение любительской селфи-палки" width="360" height="380">
                   <span class="card-element">new</span>
                   <span class="card-detailed">Подробнее</span>
                   <div class="card-specifications-container">
@@ -256,7 +258,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="card-image" src="images/catalog/cards/card-selfie-pro.jpg"
-                    alt="Изображение профессиональной селфи-палки">
+                    alt="Изображение профессиональной селфи-палки" width="360" height="380">
                   <span class="card-detailed">Подробнее</span>
                   <div class="card-specifications-container">
                     <h3 class="product-name">Профессиональная <br> селфи-палка </h3>
@@ -267,7 +269,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="card-image" src="images/catalog/cards/card-selfie-waterproof.jpg"
-                    alt="Изображение непотопляемой селфи-палки">
+                    alt="Изображение непотопляемой селфи-палки" width="360" height="380">
                   <span class="card-detailed">Подробнее</span>
                   <div class="card-specifications-container">
                     <h3 class="product-name">Непотопляемая <br> селфи-палка</h3>
@@ -278,7 +280,7 @@
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="card-image" src="images/catalog/cards/card-selfie-follow.jpg"
-                    alt="Изображение селфи-палки «Следуй за мной»">
+                    alt="Изображение селфи-палки «Следуй за мной»" width="360" height="380">
                   <span class="card-detailed">Подробнее</span>
                   <div class="card-specifications-container">
                     <h3 class="product-name">Селфи-палка «Следуй <br> за мной»</h3>
@@ -316,7 +318,7 @@
     <footer class="page-footer">
       <div class="page-footer-wrapper">
         <div class="footer-container-left">
-          <a class="footer-device-link" href="#">
+          <a class="footer-device-link" href="index.html">
             <img class="footer-device-logo" src="images/footer/device-logo-footer.svg" alt="Логотип Девайса" width="145"
               height="36">
           </a>
